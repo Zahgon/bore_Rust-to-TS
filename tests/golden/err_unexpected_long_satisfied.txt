@@ -1,0 +1,7 @@
+error: unexpected argument '--zzz' found
+
+  tip: to pass '--zzz' as a value, use '-- --zzz'
+
+Usage: bore local <LOCAL_PORT|--local-host <HOST>|--to <TO>|--port <PORT>|--secret <SECRET>>
+
+For more information, try '--help'.

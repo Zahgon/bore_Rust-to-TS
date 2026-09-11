@@ -1,0 +1,7 @@
+error: unexpected argument '-Z' found
+
+  tip: to pass '-Z' as a value, use '-- -Z'
+
+Usage: bore local [OPTIONS] --to <TO> <LOCAL_PORT>
+
+For more information, try '--help'.

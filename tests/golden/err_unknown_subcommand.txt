@@ -1,0 +1,5 @@
+error: unrecognized subcommand 'badcmd'
+
+Usage: bore <COMMAND>
+
+For more information, try '--help'.

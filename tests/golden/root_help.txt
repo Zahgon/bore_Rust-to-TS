@@ -1,0 +1,12 @@
+A modern, simple TCP tunnel in TypeScript that exposes local ports to a remote server, bypassing standard NAT connection firewalls.
+
+Usage: bore <COMMAND>
+
+Commands:
+  local   Starts a local proxy to the remote server
+  server  Runs the remote proxy server
+  help    Print this message or the help of the given subcommand(s)
+
+Options:
+  -h, --help     Print help
+  -V, --version  Print version

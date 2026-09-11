@@ -1,0 +1,5 @@
+error: port range is empty
+
+Usage: bore-cli <COMMAND>
+
+For more information, try '--help'.

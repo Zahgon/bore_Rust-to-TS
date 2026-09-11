@@ -1,0 +1,7 @@
+error: the following required arguments were not provided:
+  --to <TO>
+  <LOCAL_PORT>
+
+Usage: bore local --to <TO> <LOCAL_PORT>
+
+For more information, try '--help'.

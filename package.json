@@ -1,0 +1,47 @@
+{
+  "name": "bore-cli",
+  "version": "0.6.0",
+  "type": "module",
+  "author": "Eric Zhang <ekzhang1@gmail.com>",
+  "license": "MIT",
+  "description": "A modern, simple TCP tunnel in TypeScript that exposes local ports to a remote server, bypassing standard NAT connection firewalls.",
+  "repository": "https://github.com/ekzhang/bore",
+  "keywords": [
+    "network",
+    "cli",
+    "tunnel",
+    "tcp"
+  ],
+  "bin": {
+    "bore": "dist/src/main.js"
+  },
+  "main": "dist/src/index.js",
+  "types": "dist/src/index.d.ts",
+  "exports": {
+    ".": "./dist/src/index.js",
+    "./auth": "./dist/src/auth.js",
+    "./client": "./dist/src/client.js",
+    "./server": "./dist/src/server.js",
+    "./shared": "./dist/src/shared.js"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "bore": "node dist/src/main.js",
+    "test": "vitest run",
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "fmt": "prettier --write .",
+    "fmt:check": "prettier --check .",
+    "pretest": "tsc -p tsconfig.json",
+    "test:coverage": "vitest run --coverage"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.2",
+    "@vitest/coverage-v8": "^2.1.9",
+    "prettier": "^3.4.2",
+    "typescript": "^5.7.2",
+    "vitest": "^2.1.8"
+  }
+}

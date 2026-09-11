@@ -1,15 +1,22 @@
+<!--
+  This is a direct TypeScript port of https://github.com/ekzhang/bore.
+  The protocol, semantics, CLI surface, and error messages are preserved
+  byte-for-byte; a TypeScript client interoperates with a Rust server and
+  vice versa. See MIGRATION.md for the full mapping.
+-->
+
 # bore
 
 [![Build status](https://img.shields.io/github/actions/workflow/status/ekzhang/bore/ci.yml)](https://github.com/ekzhang/bore/actions)
-[![Crates.io](https://img.shields.io/crates/v/bore-cli.svg)](https://crates.io/crates/bore-cli)
+[![npm](https://img.shields.io/npm/v/bore-cli.svg)](https://www.npmjs.com/package/bore-cli)
 
-A modern, simple TCP tunnel in Rust that exposes local ports to a remote server, bypassing standard NAT connection firewalls. **That's all it does: no more, and no less.**
+A modern, simple TCP tunnel in TypeScript that exposes local ports to a remote server, bypassing standard NAT connection firewalls. **That's all it does: no more, and no less.**
 
 ![Video demo](https://i.imgur.com/vDeGsmx.gif)
 
 ```shell
-# Installation (requires Rust, see alternatives below)
-cargo install bore-cli
+# Installation (requires Node.js 18+, see alternatives below)
+npm install -g bore-cli
 
 # On your local machine
 bore local 8000 --to bore.pub
@@ -19,7 +26,7 @@ This will expose your local port at `localhost:8000` to the public internet at `
 
 Similar to [localtunnel](https://github.com/localtunnel/localtunnel) and [ngrok](https://ngrok.io/), except `bore` is intended to be a highly efficient, unopinionated tool for forwarding TCP traffic that is simple to install and easy to self-host, with no frills attached.
 
-(`bore` totals about 400 lines of safe, async Rust code and is trivial to set up — just run a single binary for the client and server.)
+(`bore` totals about 400 lines of strict, async TypeScript and is trivial to set up — just run a single binary for the client and server.)
 
 ## Installation
 
@@ -55,12 +62,12 @@ sudo emerge net-proxy/bore
 
 Otherwise, the easiest way to install bore is from prebuilt binaries. These are available on the [releases page](https://github.com/ekzhang/bore/releases) for macOS, Windows, and Linux. Just unzip the appropriate file for your platform and move the `bore` executable into a folder on your PATH.
 
-### Cargo
+### npm
 
-You also can build `bore` from source using [Cargo](https://doc.rust-lang.org/cargo/), the Rust package manager. This command installs the `bore` binary at a user-accessible path.
+You also can build `bore` from source using [npm](https://docs.npmjs.com/). This command installs the `bore` binary at a user-accessible path.
 
 ```shell
-cargo install bore-cli
+npm install -g bore-cli
 ```
 
 ### Docker

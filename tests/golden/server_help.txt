@@ -1,0 +1,11 @@
+Runs the remote proxy server
+
+Usage: bore server [OPTIONS]
+
+Options:
+      --min-port <MIN_PORT>          Minimum accepted TCP port number [env: BORE_MIN_PORT=] [default: 1024]
+      --max-port <MAX_PORT>          Maximum accepted TCP port number [env: BORE_MAX_PORT=] [default: 65535]
+  -s, --secret <SECRET>              Optional secret for authentication [env: BORE_SECRET]
+      --bind-addr <BIND_ADDR>        IP address to bind to, clients must reach this [default: 0.0.0.0]
+      --bind-tunnels <BIND_TUNNELS>  IP address where tunnels will listen on, defaults to --bind-addr
+  -h, --help                         Print help

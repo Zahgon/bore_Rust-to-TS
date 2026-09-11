@@ -1,0 +1,13 @@
+Starts a local proxy to the remote server
+
+Usage: bore local [OPTIONS] --to <TO> <LOCAL_PORT>
+
+Arguments:
+  <LOCAL_PORT>  The local port to expose [env: BORE_LOCAL_PORT=]
+
+Options:
+  -l, --local-host <HOST>  The local host to expose [default: localhost]
+  -t, --to <TO>            Address of the remote server to expose local ports to [env: BORE_SERVER=]
+  -p, --port <PORT>        Optional port on the remote server to select [default: 0]
+  -s, --secret <SECRET>    Optional secret for authentication [env: BORE_SECRET]
+  -h, --help               Print help
